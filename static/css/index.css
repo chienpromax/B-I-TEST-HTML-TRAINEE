@@ -1,0 +1,348 @@
+.navbar {
+    background-color: rgb(232, 235, 240);
+}
+
+.nav-item {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-item>a:hover {
+    color: rgb(22, 183, 185);
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.dropdown-menu {
+    border-bottom: solid 5px rgb(22, 183, 185);
+}
+
+.dropdown-item:hover {
+    color: rgb(22, 183, 185);
+}
+
+@keyframes beforeAnimation {
+    0% {
+        width: 0%;
+        transform: translateX(-20%);
+    }
+
+    100% {
+        width: 95%;
+        transform: translateX(0%);
+    }
+}
+
+.nav-link::before {
+    content: "";
+    background-color: rgb(22, 183, 185);
+    width: 95%;
+    height: 4px;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    display: none;
+    animation: beforeAnimation .8s;
+}
+
+.nav-link:hover::before {
+    color: rgb(22, 183, 185);
+    display: unset;
+}
+
+.nav-link:hover {
+    color: rgb(0, 119, 132);
+}
+
+.logo-bis {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.logo-lite {
+    font-weight: 700;
+    font-size: 46px;
+    color: rgb(44, 175, 212);
+}
+
+
+/* ========slide-Show======== */
+.slide-Show {
+    background-color: rgb(130, 228, 237);
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    border-radius: 50%;
+    margin: 0 3px 3px 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+
+/* =========index-info=========== */
+.index-info {
+    background-color: rgb(232, 235, 240);
+}
+
+.index-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-info-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(42, 171, 203);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-info-icon>i {
+    font-size: 26px;
+    color: rgb(246, 238, 238);
+}
+
+.index-info-title>h5 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.index-info-footer {
+    display: flex;
+    align-items: center;
+}
+
+.index-info-footer>a {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(44, 175, 212);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* ==========main============ */
+.navigation-header {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-header>i {
+    color: rgb(42, 171, 203);
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.navigation-header>span {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.navigation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navigation-btn>button {
+    background-color: rgb(121, 224, 250);
+    border-radius: 50%;
+    width: 30px
+}
+
+.navigation-btn>button>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ==========images=========== */
+.images {
+    position: relative;
+}
+
+.images>img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.images-icon>div>a>i {
+    color: rgb(255, 255, 255);
+    margin: 0 15px 0 15px;
+    font-size: 20px;
+}
+
+.images-icon {
+    width: 93%;
+    height: 50%;
+    bottom: 0;
+    left: 12px;
+    position: absolute;
+    background: rgba(23, 174, 194, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.images-icon:hover {
+    opacity: 1;
+}
+
+.images-icon:hover>* {
+    transform: translateY(-5px);
+    transition: transform 0.6s;
+}
+
+/* ============Testimonials=========== */
+.Testimonials-header>div>i {
+    color: rgb(42, 171, 203);
+    font-size: 28px;
+}
+
+.Testimonials-header>div>span {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.Testimonials-conten>p>span {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.client-logo {
+    border: 1px solid #bbbbbb;
+    box-shadow: 0 4px 18px rgba(176, 176, 176, 0.3),
+        /* Bóng từ dưới lên */
+        0 -4px 18px rgba(176, 176, 176, 0.3),
+        /* Bóng từ trên xuống */
+        -4px 0 18px rgba(176, 176, 176, 0.3),
+        /* Bóng từ trái sang */
+        4px 0 18px rgba(176, 176, 176, 0.3);
+    /* Bóng từ phải sang */
+}
+
+
+/* ==========Dowload PDF======== */
+.dowload-pdf {
+    background-color: rgba(167, 229, 237, 0.6);
+}
+
+.dowload-pdf>div>p {
+    padding: 20px 50px 20px 50px;
+}
+
+.btn-dowload-pdf {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+
+.btn-dowload-pdf>a {
+    background-color: rgb(109, 213, 223);
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 6%;
+    box-shadow: 0px 3px 3px 3px gray;
+    margin: 10px 0 10px 0;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.btn-dowload-pdf>a:hover,
+.btn-dowload-pdf>a:hover i {
+    background-color: rgb(55, 216, 230);
+    color: rgb(18, 54, 253);
+}
+
+.btn-dowload-pdf>a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-dowload-pdf>a>i {
+    color: rgb(234, 226, 226);
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+/* ========footer======== */
+.footer {
+    background-color: rgb(232, 235, 240);
+}
+
+
+.footer-info {
+    color: rgb(0, 0, 0);
+}
+
+.footer-info .menu {
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
+    transition: border 0.9s ease;
+}
+
+.footer-info .footer-info-me {
+    display: inline;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo>span>a>img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.line-copyRight {
+    color: rgb(0, 0, 0);
+}
+
+.footer-copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
