@@ -2,6 +2,10 @@
     background-color: rgb(232, 235, 240);
 }
 
+.navbar-brand{
+    cursor: pointer;
+}
+
 .nav-item {
     cursor: pointer;
     font-weight: 500;
